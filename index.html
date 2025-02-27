@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔罗牌占卜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">塔罗牌占卜</h1>
+        
+        <div class="menu">
+            <button class="menu-btn" onclick="drawOneCard()">抽一张牌</button>
+            <button class="menu-btn" onclick="drawThreeCards()">抽三张牌</button>
+            <button class="menu-btn" onclick="reshuffleDeck()">重新洗牌</button>
+        </div>
+
+        <div class="cards-container" id="cardsContainer"></div>
+
+        <div class="card-description" id="cardDescription"></div>
+    </div>
+
+    <div class="draw-animation" id="drawAnimation">
+        <div class="card-back"></div>
+    </div>
+
+    <audio id="cardSound" src="sounds/card-flip.mp3"></audio>
+    <script src="tarot-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
